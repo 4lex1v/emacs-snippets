@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Akka Actor
+# key: actor
+# --
+final class $1Actor extends Actor {
+  override def receive: Receive = {
+    case $2 => $3
+  }
+}
