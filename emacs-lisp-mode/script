@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: script
+# key: script
+# --
+#!/usr/bin/env ${0:zsh}
+":"; exec emacs --quick --script "$0" "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
+
+(load "~/.emacs.d/scripted/scripted.el")
+
+$1
